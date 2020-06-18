@@ -7,8 +7,8 @@ let package = Package(
     name: "KrakenKit",
     platforms: [.macOS(.v10_14)],
     products: [
-        .library(name: "Proto", type: .static, targets: ["Proto"]),
-        .library(name: "KrakenKit", type: .static, targets: ["KrakenKit"])
+        .library(name: "Proto", type: .dynamic, targets: ["Proto"]),
+        .library(name: "KrakenKit", type: .dynamic, targets: ["KrakenKit"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.2.0"),
